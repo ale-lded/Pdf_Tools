@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 export default function NavBar() {
+    const location = useLocation();
+    if (location.pathname === '/') {
+        return null; // Non mostrare la NavBar nella home page
+    } 
+
     return (
         //aggiungere gli stati per togliere il pulsante home nella home, convert in conver
 
