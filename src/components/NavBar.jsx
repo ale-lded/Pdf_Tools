@@ -7,18 +7,18 @@ export default function NavBar() {
 
 
         <div className="navbar">
-        <button className="btn-nav">
-        <Link to="/">Torna alla Home</Link>
-        </button>
-        <button className="btn-nav">
-        <Link to="/Compress">Comprimi PDF</Link>
-        </button>
-        <button className="btn-nav">
-        <Link to="/Merge">Unisci PDF</Link>
-        </button>
-        <button className="btn-nav">
-        <Link to="/Convert">Converti PDF</Link>
-        </button>
+            <button className="btn-nav">
+            <Link to="/">Torna alla Home</Link>
+            </button>
+            <button className="btn-nav">
+            <Link to="/Compress">Comprimi PDF</Link>
+            </button>
+            <button className="btn-nav">
+            <Link to="/Merge">Unisci PDF</Link>
+            </button>
+            <button className="btn-nav">
+            <Link to="/Convert">Converti PDF</Link>
+            </button>
         </div>
         );  
     }

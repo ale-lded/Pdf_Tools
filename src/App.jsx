@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Compressor from './pages/Compress';
 import Merge from './pages/Merge';
 import Convert from './pages/Convert';
+import NavBar from './components/NavBar';
 
 // Creeremo a breve anche queste per completare la suite:
 // import MergePdf from './pages/MergePdf';
@@ -15,26 +16,33 @@ function App() {
 
 
   return (
-    <BrowserRouter>
-      {/* 
-        Routes analizza l'URL corrente del browser 
-        e mostra SOLO il componente del Route corrispondente 
-      */}
-      <Routes>
-        {/* URL: http://localhost:5173/ */}
-        <Route path="/" element={<Home />} />
+    
+     
+      
+      <BrowserRouter>
+        {/* 
+          Routes analizza l'URL corrente del browser 
+          e mostra SOLO il componente del Route corrispondente 
+        */}
 
-        {/* URL: http://localhost:5173/compress */}
-        <Route path="/Compress" element={<Compressor />} />
+        <NavBar></NavBar>
 
-        <Route path="/Merge" element={<Merge />} />
+        <Routes>
+          {/* URL: http://localhost:5173/ */}
+          <Route path="/" element={<Home />} />
 
-        <Route path="/Convert" element={<Convert />} />
+          {/* URL: http://localhost:5173/compress */}
+          <Route path="/compress" element={<Compressor />} />
 
-        {/* Rotta di riserva: se l'utente digita un URL inesistente, torna in Home */}
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/merge" element={<Merge />} />
+
+          <Route path="/convert" element={<Convert />} />
+
+          {/* Rotta di riserva: se l'utente digita un URL inesistente, torna in Home */}
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    
   )
 }
 

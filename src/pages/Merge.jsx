@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import BtnHome from '../components/BtnHome';
+import NavBar from '../components/NavBar';
 
 
 export default function Merge() {
@@ -8,7 +8,6 @@ export default function Merge() {
             
 
             <div className="merge">
-                <NavBar></NavBar>
                 <h1>Unisci i tuoi file PDF</h1>
         
             </div>

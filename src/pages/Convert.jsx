@@ -5,7 +5,6 @@ export default function Convert() {
     return (
 
         <div className="convert">
-        <NavBar></NavBar>
         <h1>Converti i tuoi file PDF</h1>
         
         </div>
